@@ -9,21 +9,21 @@
  */
 int main(void)
 {
-        int n;
+    int n, last_digit;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        printf("Last digit of %d is ", n);
-        if (n < 0)
-                n = -n;
-        n = n % 10;
-        printf("%d ", n);
-        if (n > 5)
-                printf("and is greater than 5\n");
-        else if (n == 0)
-                printf("and is 0\n");
-        else
-                printf("and is less than 6 and not 0\n");
+    srand(time(NULL)); /* Seed the random number generator */
+    n = rand() - RAND_MAX / 2; /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
 
-        return (0);
+    last_digit = abs(n % 10); /* Get the absolute value of the last digit of n */
+
+    printf("Last digit of %d is %d and is ", n, last_digit);
+
+    if (last_digit > 5)
+        printf("greater than 5\n");
+    else if (last_digit == 0)
+        printf("0\n");
+    else
+        printf("less than 6 and not 0\n");
+
+    return (0);
 }
