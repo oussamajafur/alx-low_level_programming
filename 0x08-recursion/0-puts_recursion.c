@@ -17,4 +17,4 @@
             }
 	    _putchar(*string);
 	    _puts_recursion(string + 1);
-   }  
+   } 
