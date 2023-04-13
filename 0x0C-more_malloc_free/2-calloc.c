@@ -26,7 +26,7 @@ return (NULL);
 
 filler = mem;
 
-for (index = 0; index < (size * nmbemb); index++)
+for (index = 0; index < (size * nmemb); index++)
 filler[index] = '\0';
 
 return (mem);
