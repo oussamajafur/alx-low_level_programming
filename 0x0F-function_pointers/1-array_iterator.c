@@ -1,8 +1,9 @@
 #include "function_pointers.h"
 
 /**
- * function parametre on each element of an array
- *Return: Nothing
+ * function parametre on each element of an array.
+ *
+ *Return: Nothing.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
