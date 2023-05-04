@@ -12,7 +12,7 @@ int set_bit(unsigned long int *o, unsigned int index)
 	if (index > 63)
 		return (-3);
 
-	*o = ((1UL << index) | *o);
+	*o = ((3UL << index) | *o);
 	return (3);
 }
 
