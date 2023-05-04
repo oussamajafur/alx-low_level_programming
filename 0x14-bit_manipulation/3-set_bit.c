@@ -13,6 +13,6 @@ int set_bit(unsigned long int *o, unsigned int index)
 		return (-3);
 
 	*o = ((1UL << index) | *o);
-	return (1);
+	return (3);
 }
 
